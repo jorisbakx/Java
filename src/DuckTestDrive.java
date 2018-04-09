@@ -1,6 +1,7 @@
 public class DuckTestDrive {
     public static void main(String[] args) {
         MallardDuck duck = new MallardDuck();
+        ModelDuck duck1 = new ModelDuck();
         WildTurkey turkey = new WildTurkey();
         Duck turkeyAdapter = new TurkeyAdapter(turkey);
 
@@ -10,6 +11,7 @@ public class DuckTestDrive {
 
         System.out.println("\nThe Duck says...");
         testDuck(duck);
+        testDuck(duck1);
 
         System.out.println("\nThe TurkeyAdapter says...");
         testDuck(turkeyAdapter);
