@@ -1,9 +1,9 @@
-public class ModelDuck extends Duck {
-    public ModelDuck() {
-        flyBehavior = new FlyNoWay();
-        quackBehavior = new Quack();
+public class ModelDuck implements Duck {
+    public void quack() {
+        System.out.println("<<Silence>>");
     }
-    public void display() {
-        System.out.println("I’m a model duck");
+
+    public void fly() {
+        System.out.println("I cant't fly");
     }
 }
